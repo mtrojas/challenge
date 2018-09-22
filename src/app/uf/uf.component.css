@@ -1,0 +1,64 @@
+.container {
+  padding-left: 330px;
+  display: grid;
+  grid-template-rows: 50px 50px 50px;
+  grid-gap: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 200px;
+}
+
+
+h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+form {
+  border: none;
+  font-size: 22px;
+  padding: 20px 20px 10px 0px;
+  font-family:  "Nunito", sans-serif;
+  color: var(--gray);
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+p {
+  padding-top: 10px;
+}
+
+button {
+  display: inline-block;
+  border: none;
+  padding: 1rem 2rem;
+  margin: 0;
+  text-decoration: none;
+  background: var(--green);
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out,
+              transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+button:hover,
+button:focus {
+  background: var(--gray);
+}
+
+button:focus {
+  outline: 1px solid #fff;
+  outline-offset: -4px;
+}
+
+button:active {
+  transform: scale(0.99);
+}
+

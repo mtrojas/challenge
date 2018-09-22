@@ -52,10 +52,7 @@ export class UsdComponent implements OnInit {
 
     this._sbif.getMonthlyUSD(this.data.year, this.data.month)
       .subscribe(res => {
-        //console.log(res)
-
-        this.monies = res;
-        console.log(this.monies)
+        console.log(res)
 
         let usd = res['Dolares']
           .map(res => res.Valor)

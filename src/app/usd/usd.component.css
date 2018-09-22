@@ -1,11 +1,14 @@
 .container {
+  padding-left: 330px;
   display: grid;
+  grid-template-rows: 50px 50px 50px;
+  grid-gap: 20px;
   justify-content: center;
   align-items: center;
-  grid-template-rows: 1fr 1fr 1fr;
   width: 70%;
   height: 200px;
 }
+
 
 h1 {
   text-align: center;
