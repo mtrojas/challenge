@@ -1,1 +1,53 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+:root {
+  --green: rgb(171, 235, 198);
+  --gray: rgb(110, 108, 107);
+}
+html {
+  /* border-box box model allows us to add padding and border to our elements without increasing their size */
+  box-sizing: border-box;
+  /* A system font stack so things load nice and quick! */
+  font-family:  "Nunito", sans-serif;
+  font-weight: 800;
+  font-size: 14px;
+  color: var(--gray);
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
+}
+
+/*
+  WAT IS THIS?!
+  We inherit box-sizing: border-box; from our <html> selector
+  Apparently this is a bit better than applying box-sizing: border-box; directly to the * selector
+*/
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  /* min-height: calc(100vh - 100px); */
+  margin-top: 20px;
+  margin-left: 60px;
+  margin-right: 60px;
+  /* margin-bottom: 60px; */
+  background: white;
+  background-attachment: fixed;
+  letter-spacing: 1px;
+  font-family:  "Nunito", sans-serif;
+  color: var(--gray);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family:  "Nunito", sans-serif;
+  margin: 0 0 5px 0;
+  color: var(--gray);
+}
+
+
