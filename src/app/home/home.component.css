@@ -1,0 +1,26 @@
+.container {
+  display: grid;
+  grid-gap: 100px;
+  grid-template-columns: 200px 200px;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+}
+
+h2 {
+  color: #fff;
+  font-size: 3rem;
+}
+
+.item {
+  background-color: var(--green);
+  border-radius: 50%;
+  padding: 100px;
+  cursor: pointer;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+

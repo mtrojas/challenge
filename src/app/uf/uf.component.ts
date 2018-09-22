@@ -23,7 +23,7 @@ export class UfComponent implements OnInit {
   month: string;
 
   value: any;
-  monies: any;
+
 
   constructor(
     private _sbif: SbifService

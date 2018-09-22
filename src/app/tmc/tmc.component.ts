@@ -23,18 +23,37 @@ export class TmcComponent implements OnInit {
   month: string;
 
   value: any;
-  monies: any;
+
 
   constructor(
     private _sbif: SbifService
   ) { }
 
+  saveData() {
+    let data = {
+      year: this.year,
+      month: this.month
+    }
+    localStorage.setItem('data', JSON.stringify(data));
+    window.location.reload();
+  }
+
   ngOnInit() {
-    this._sbif.getMonthlyTMC(this.year, this.month)
+
+    this.value = localStorage.getItem('data');
+
+    if(this.value != null) {
+      this.data=JSON.parse(this.value);
+    } else {
+      this.data = {
+        year: '2017',
+        month: '01'
+      }
+    }
+
+    this._sbif.getMonthlyTMC(this.data.year, this.data.month)
     .subscribe(res => {
-      console.log(res)
-
-
+      console.log(res)s
 
     })
   }
