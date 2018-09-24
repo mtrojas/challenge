@@ -53,7 +53,7 @@ export class TmcComponent implements OnInit {
 
     this._sbif.getMonthlyTMC(this.data.year, this.data.month)
     .subscribe(res => {
-      console.log(res)s
+      console.log(res)
 
     })
   }
